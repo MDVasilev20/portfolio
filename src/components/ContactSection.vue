@@ -14,7 +14,7 @@ const { elementRef, isVisible } = useScrollReveal()
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
       ]"
     >
-      <SectionHeading number="04" title="Get In Touch" />
+      <SectionHeading number="05" title="Get In Touch" />
 
       <p class="text-slate-400 mt-8 text-lg leading-relaxed max-w-xl mx-auto">
         I'm currently looking for opportunities in data engineering and backend development.
@@ -23,7 +23,7 @@ const { elementRef, isVisible } = useScrollReveal()
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
         <a
-          href="mailto:maksim.vasilev.dev@gmail.com"
+          href="mailto:maxim.vasilev.work@gmail.com"
           class="px-8 py-3 bg-accent/10 border border-accent/50 text-accent font-mono text-sm rounded-lg
                  hover:bg-accent/20 hover:border-accent hover:shadow-[0_0_30px_rgba(6,182,212,0.2)]
                  transition-all duration-300 flex items-center gap-2"
@@ -48,7 +48,7 @@ const { elementRef, isVisible } = useScrollReveal()
         </a>
 
         <a
-          href="/resume.pdf"
+          href="/portfolio/resume.pdf"
           target="_blank"
           class="px-8 py-3 bg-glass border border-glass-border text-slate-300 font-mono text-sm rounded-lg
                  hover:border-slate-500 hover:text-white transition-all duration-300 flex items-center gap-2"

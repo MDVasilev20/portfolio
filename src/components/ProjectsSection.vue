@@ -24,7 +24,7 @@ const filtered = computed(() =>
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
       ]"
     >
-      <SectionHeading number="02" title="Projects" />
+      <SectionHeading number="03" title="Projects" />
 
       <!-- Filter bar -->
       <div class="flex flex-wrap gap-2 mt-8 mb-10">

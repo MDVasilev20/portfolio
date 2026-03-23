@@ -4,10 +4,11 @@ import { useScrollSpy } from '../composables/useScrollSpy'
 
 const scrolled = ref(false)
 const mobileOpen = ref(false)
-const { activeSection } = useScrollSpy(['about', 'projects', 'demo', 'contact'])
+const { activeSection } = useScrollSpy(['about', 'experience', 'projects', 'demo', 'contact'])
 
 const links = [
   { href: '#about', label: 'About', id: 'about' },
+  { href: '#experience', label: 'Experience', id: 'experience' },
   { href: '#projects', label: 'Projects', id: 'projects' },
   { href: '#demo', label: 'Live Demo', id: 'demo' },
   { href: '#contact', label: 'Contact', id: 'contact' },

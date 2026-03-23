@@ -37,21 +37,40 @@ const icons: Record<string, string> = {
     ]"
     :style="{ transitionDelay: `${delay}ms`, willChange: 'transform' }"
   >
-    <!-- Card header with gradient + icon -->
+    <!-- Card header with gradient + icon + screenshot -->
     <div :class="['relative h-48 bg-gradient-to-br overflow-hidden', project.gradient]">
       <div
         class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/20 to-transparent z-10"
       />
 
-      <!-- Decorative icon -->
-      <div class="absolute inset-0 flex items-center justify-center opacity-[0.07] group-hover:opacity-[0.12] transition-opacity duration-500">
+      <!-- Screenshot (shown on hover) -->
+      <img
+        v-if="project.screenshot"
+        :src="project.screenshot"
+        :alt="project.title"
+        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40
+               transition-opacity duration-500 scale-105 group-hover:scale-100
+               transition-[opacity,transform]"
+        loading="lazy"
+      />
+
+      <!-- Decorative icon (fades out on hover if screenshot exists) -->
+      <div :class="[
+        'absolute inset-0 flex items-center justify-center transition-opacity duration-500',
+        project.screenshot
+          ? 'opacity-[0.07] group-hover:opacity-0'
+          : 'opacity-[0.07] group-hover:opacity-[0.12]',
+      ]">
         <svg class="w-40 h-40 text-white" viewBox="0 0 24 24" fill="currentColor">
           <path :d="icons[project.icon]" />
         </svg>
       </div>
 
-      <!-- Animated dots pattern -->
-      <div class="absolute inset-0 opacity-20">
+      <!-- Animated dots pattern (fades on hover if screenshot) -->
+      <div :class="[
+        'absolute inset-0 transition-opacity duration-500',
+        project.screenshot ? 'opacity-20 group-hover:opacity-0' : 'opacity-20',
+      ]">
         <svg width="100%" height="100%">
           <defs>
             <pattern :id="`dots-${project.id}`" width="24" height="24" patternUnits="userSpaceOnUse">

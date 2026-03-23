@@ -14,7 +14,7 @@ const { elementRef, isVisible } = useScrollReveal()
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
       ]"
     >
-      <SectionHeading number="03" title="Live Demo" />
+      <SectionHeading number="04" title="Live Demo" />
 
       <p class="text-slate-400 mt-4 mb-8 max-w-2xl">
         <span class="text-accent font-mono">No-Name — World Explorer</span> is an interactive

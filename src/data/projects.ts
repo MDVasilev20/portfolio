@@ -10,6 +10,7 @@ export interface Project {
   demo?: string
   gradient: string
   icon: string
+  screenshot?: string
   highlights: string[]
 }
 
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     repo: 'https://github.com/MDVasilev20/GlobeTrekker',
     gradient: 'from-blue-600/30 via-indigo-700/20 to-purple-800/30',
     icon: 'globe',
+    screenshot: 'https://raw.githubusercontent.com/MDVasilev20/GlobeTrekker/main/src/Template/images/hero_1.jpg',
     highlights: [
       'SQL Server with EF Core Code-First migrations',
       'ASP.NET Identity with role-based auth (Admin/User)',
@@ -50,6 +52,25 @@ export const projects: Project[] = [
       'PostgreSQL via Supabase for data persistence',
       'CI/CD with GitHub Actions',
       'Avalonia UI cross-platform desktop client',
+    ],
+  },
+  {
+    id: 'user-management-api',
+    title: 'User Management API',
+    tagline: 'REST API with ASP.NET Core, Entity Framework, and SQL Server',
+    description:
+      'A clean multi-layered REST API for user management built with ASP.NET Core. Features CRUD endpoints, Entity Framework Core with SQL Server, AutoMapper for object mapping, and a service-repository pattern across 4 projects.',
+    tech: ['C#', 'ASP.NET Core', 'SQL Server', 'Entity Framework', 'AutoMapper', 'REST API'],
+    category: 'backend',
+    role: 'Solo Developer',
+    repo: 'https://github.com/MDVasilev20/fluffy-giggle',
+    gradient: 'from-sky-600/30 via-blue-700/20 to-indigo-800/30',
+    icon: 'globe',
+    highlights: [
+      'Clean 4-project layered architecture (WebHost → Services → Data → Shared)',
+      'Entity Framework Core with SQL Server',
+      'AutoMapper for DTO mapping',
+      'RESTful CRUD endpoints',
     ],
   },
   {
@@ -83,6 +104,7 @@ export const projects: Project[] = [
     repo: 'https://github.com/PPDimitrakova20/Indigo',
     gradient: 'from-violet-600/30 via-purple-700/20 to-fuchsia-800/30',
     icon: 'cards',
+    screenshot: 'https://raw.githubusercontent.com/PPDimitrakova20/Indigo/main/resources/Menu.png',
     highlights: [
       'Boolean algebra game mechanics (AND, OR, XOR)',
       'Custom game engine with Raylib',
@@ -101,6 +123,7 @@ export const projects: Project[] = [
     repo: 'https://github.com/PPDimitrakova20/Sol-Invictus',
     gradient: 'from-yellow-600/30 via-amber-700/20 to-orange-800/30',
     icon: 'atom',
+    screenshot: 'https://raw.githubusercontent.com/PPDimitrakova20/Sol-Invictus/main/assets/UI/background.png',
     highlights: [
       'Element collection and crafting system',
       'Educational chemistry content',
@@ -119,6 +142,7 @@ export const projects: Project[] = [
     repo: 'https://github.com/BozhidarBoyadzhiev/Intergalactic-warriors',
     gradient: 'from-cyan-600/30 via-sky-700/20 to-blue-800/30',
     icon: 'gamepad',
+    screenshot: 'https://user-images.githubusercontent.com/85335663/144723982-d20515c6-cb65-4ede-a673-7e8a28918a82.png',
     highlights: [
       'SDL2 graphics and input handling',
       'Physics-based ball movement',

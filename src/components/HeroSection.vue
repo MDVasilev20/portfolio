@@ -81,7 +81,7 @@ function scrollToProjects() {
           View My Work
         </button>
         <a
-          href="/resume.pdf"
+          href="/portfolio/resume.pdf"
           target="_blank"
           class="px-8 py-3 bg-glass border border-glass-border text-slate-300 font-mono text-sm rounded-lg
                  hover:border-slate-500 hover:text-white transition-all duration-300 flex items-center gap-2"
